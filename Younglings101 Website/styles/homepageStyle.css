@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+html {
+ margin:0;
+ padding:0;
+
+ 
+}
+body {
+ margin:0;
+ font-family:"Inconsolata";
+ height:100%;
+ background-color: #525050;
+ font-family: 'Open Sans Condensed', sans-serif;
+ 
+}
+
+.homepageInfoPanel{
+    background-color: #A0E418;
+    width:35%;
+    float:left;
+    margin-left: 10%;
+    height:100%;
+}
+
+#companyText{
+    text-align: center;
+    margin-top: 20%;
+    font-size: 2.8em;
+    color:#525050;
+    
+}
+
+#groupName{
+    text-align: center;
+    font-size: 2.8em;
+    color:#525050;
+}
+
+.alienLogo{
+    height:140px;
+    width:140px;
+    position:relative;
+    
+    border-radius:50%
+}
+
+.alienLogoContainer{
+    margin-left: 36%;
+    margin-right: 66%;
+}
+
+.homepageInfoText{
+    font-size: 1.3em;
+    margin:5%;
+}
+
+
+.hex-grid{
+    float: right; 
+    width: 400px;
+    margin-right: 10%;
+    margin-top: 15%;
+}
+
+.hex {
+    float: left;
+    margin-left: 3px;
+    margin-bottom: -37px;
+}
+.hex .top {
+    width: 0;
+    border-bottom: 40px solid #A0E418;
+    border-left: 62px solid transparent;
+    border-right: 62px solid transparent;
+}
+.middle {
+    width: 124px;
+    height: 80px;
+    background: #A0E418;
+}
+.hex .bottom {
+    width: 0;
+    border-top: 40px solid #A0E418;
+    border-left: 62px solid transparent;
+    border-right: 62px solid transparent;
+}
+.hex-row {
+    clear: left;
+}
+.hex-row.even {
+    margin-left: 63px;
+}
+
+
+.hexText{
+    text-align: center;
+    padding-top:10%;
+    font-size: 1.4em;
+    color:#525050;
+}
