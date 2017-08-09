@@ -8,8 +8,40 @@
             background:black;
             background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#7FB414), to(#fff));
         }
+
+        .nav{
+            background-color: #7FB414;
+        }
+
+        .social-media-list{
+        list-style: none;
+        }
+
+        .social-media-list li{
+        color: #FFF;
+        font-size: 24px;
+        text-align: center;
+        padding: 3px;
+        }
+
+        .social-media-list li:hover{
+        cursor: pointer;
+        background-color: #A0E418;
+        color: #6c6a6a;
+        }
 </style>
+
 <head>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
     <link href = "../css/font-awesome.css" rel = "stylesheet">
     <link href = "../css/font-awesome.min.css" rel = "stylesheet">
 
@@ -19,14 +51,50 @@
     <div>
         <h1>#Younglings101</h1>
         <span class = "fading-line"><span>
-        <h2>Check out what the younglings have been up to!
+        <h2>Check out what the younglings have been up to!</h2>
             
-            <div>
+            <div class = "row container-fluid">
+                <nav class = "nav nav-navbar">
+                    <span class = "col-sm-1 col-lg-1"></span>
+                    <ul class = "social-media-list">
+                        <div class = "col-sm-2 col-lg-2">
+                        <li>Twitter</li>
+                        </div>
+                        <div class = "col-sm-2 col-lg-2">
+                        <li>Facebook</li>
+                        </div>
+                        <div class = "col-sm-2 col-lg-2">
+                        <li>Instagram</li>
+                        </div>
+                        <div class = "col-sm-2 col-lg-2">
+                        <li>Youtube</li>
+                        </div>
+                        <div class = "col-sm-2 col-lg-2">
+                        <li>LinkedIn</li>
+                        </div>
+                    <ul>
+                    <span class = "col-sm-1 col-lg-1"></span>
+                </nav>
+            </div>
+
+            <div class = "row container-fluid">
+                <span class = "col-sm-1 col-lg-1"></span>
+                <div class = "col-sm-2 col-lg-2">
                 <button class = "btn btn-block"><i class="fa fa-twitter"></i> Twitter</button>
+                </div>
+                <div class = "col-sm-2 col-lg-2">
                 <button class = "btn btn-block"><i class="fa fa-facebook"></i> Facebook</button>
+                </div>
+                <div class = "col-sm-2 col-lg-2">
                 <button class = "btn btn-block"><i class="fa fa-instagram"></i> Instagram</button>
+                </div>
+                <div class = "col-sm-2 col-lg-2">
                 <button class = "btn btn-block"><i class="fa fa-youtube"></i> Youtube</button>
+                </div>
+                <div class = "col-sm-2 col-lg-2">
                 <button class = "btn btn-block"><i class="fa fa-linkedin"></i> LinkedIn</button>
+                </div>
+                <span class = "col-sm-1 col-lg-1"></span>
             </div>
     </div>
 </body>
