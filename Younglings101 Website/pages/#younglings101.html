@@ -58,44 +58,59 @@
                     <span class = "col-sm-1 col-lg-1"></span>
                     <ul class = "social-media-list">
                         <div class = "col-sm-2 col-lg-2">
-                        <li>Twitter</li>
+                        <li onclick="window.location.href = '#twitter'">Twitter</li>
                         </div>
                         <div class = "col-sm-2 col-lg-2">
-                        <li>Facebook</li>
+                        <li onclick="window.location.href = '#facebook'">Facebook</li>
                         </div>
                         <div class = "col-sm-2 col-lg-2">
-                        <li>Instagram</li>
+                        <li onclick="window.location.href = '#instagram'">Instagram</li>
                         </div>
                         <div class = "col-sm-2 col-lg-2">
-                        <li>Youtube</li>
+                        <li onclick="window.location.href = '#youtube'">Youtube</li>
                         </div>
                         <div class = "col-sm-2 col-lg-2">
-                        <li>LinkedIn</li>
+                        <li onclick="window.location.href = '#linkedin'">LinkedIn</li>
                         </div>
                     <ul>
                     <span class = "col-sm-1 col-lg-1"></span>
                 </nav>
             </div>
 
-            <div class = "row container-fluid">
-                <span class = "col-sm-1 col-lg-1"></span>
-                <div class = "col-sm-2 col-lg-2">
-                <button class = "btn btn-block"><i class="fa fa-twitter"></i> Twitter</button>
-                </div>
-                <div class = "col-sm-2 col-lg-2">
-                <button class = "btn btn-block"><i class="fa fa-facebook"></i> Facebook</button>
-                </div>
-                <div class = "col-sm-2 col-lg-2">
-                <button class = "btn btn-block"><i class="fa fa-instagram"></i> Instagram</button>
-                </div>
-                <div class = "col-sm-2 col-lg-2">
-                <button class = "btn btn-block"><i class="fa fa-youtube"></i> Youtube</button>
-                </div>
-                <div class = "col-sm-2 col-lg-2">
-                <button class = "btn btn-block"><i class="fa fa-linkedin"></i> LinkedIn</button>
-                </div>
-                <span class = "col-sm-1 col-lg-1"></span>
+        <script src="../lib/angular.min.js" type="text/javascript"></script>
+        <script src="../lib/angular-route.js" type="text/javascript"></script>
+        <script src="../js/app.js" type="text/javascript"></script>
+
+            <div class = "row container-fluid ng-view">
+                <!--Display routed social media pages-->
             </div>
+
     </div>
 </body>
+
+<script>
+var app = angular.module("myApp", ["ngRoute"]);
+app.config(function($routeProvider) {
+    $routeProvider
+    .when("/", {
+        templateUrl : "main.htm"
+    })
+    .when("/twitter", {
+        templateUrl : "../social-media/twitter.htm"
+    })
+    .when("/facebook", {
+        templateUrl : "../social-media/facebook.htm"
+    })
+    .when("/instagram", {
+        templateUrl : "../social-media/instagram.htm"
+    })
+    .when("/youtube", {
+        templateUrl : "../social-media/youtube.htm"
+    })
+    .when("/linkedin", {
+        templateUrl : "../social-media/linkedin.htm"
+    });
+});
+</script>
+
 </html>
