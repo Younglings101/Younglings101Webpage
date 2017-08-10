@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+    *{
+        font-family: 'Open Sans Condensed' , sans-serif;
+    }
+
+        .fading-line {
+            display: block;
+            border: none;
+            color: white;
+            height: 2px;
+            background: black;
+            background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#7FB414), to(#fff));
+        }
+
+    .nav {
+        background-color: #7FB414;
+    }
+
+    .social-media-list {
+        list-style: none;
+    }
+
+    .social-media-list li {
+        color: #FFF;
+        font-size: 24px;
+        text-align: center;
+        padding: 3px;
+    }
+
+    .social-media-list li:hover {
+        cursor: pointer;
+        background-color: #A0E418;
+        color: #6c6a6a;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    .social-media-display{
+        height:auto;
+    }
+
+    #link-facebook{
+        text-decoration: none;
+        padding: 4px;
+        background-color: #4267b2;
+        color: white;
+        border-radius: 3px;
+    }
+
+    #link-twitter{
+        text-decoration: none;
+        padding: 4px;
+        background-color: #4267b2;
+        color: white;
+        border-radius: 3px;
+    }
+
+    #link-youtube{
+        text-decoration: none;
+        padding: 4px;
+        background-color: #cc181e;
+        color: white;
+        border-radius: 3px;
+    }
+
+    #link-instagram{
+        text-decoration: none;
+        padding: 4px;
+        color: white;
+        border-radius: 3px;
+        background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #4b65d4,#dd2c72, #ffde85); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #4b65d4,#dd2c72, #ffde85); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #4b65d4,#dd2c72, #ffde85); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right,#4b65d4, #dd2c72, #ffde85); /* Standard syntax */
+    }
+
+    #link-linkedin{
+        text-decoration: none;
+        padding: 4px;
+        background-color: #4267b2;
+        color: white;
+        border-radius: 3px;
+    }
+
+    iframe{
+    bottom: 0; left: 0; top: 0; right: 0;
+    margin: auto;
+    position: absolute;
+}
+
+    .youtube-panel{
+        height: 800px;
+    }
+
+    .twitter-panel {
+        height: 800px;
+}
+
+.twitter-timeline{
+    height: 100%;
+    width: 100%;
+}
+
