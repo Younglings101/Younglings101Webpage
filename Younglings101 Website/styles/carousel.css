@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
 img {
     max-width: 100%;
 }
@@ -25,6 +26,18 @@ body {
 }
 
 
+/*Web Page Box  */
+
+.webpage {
+    border: 1px solid white;
+    height: 500px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    overflow: scroll;
+}
+
+
 /*Page header*/
 
 .page-header {
@@ -34,6 +47,8 @@ body {
     border-top: 4px solid #6c6a6a;
     color: #999;
     text-transform: uppercase;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .page-header h3 {
@@ -66,10 +81,10 @@ ul.thumbnails {
     border-radius: 0px;
     display: inline-block;
     font-size: 34px;
+    padding: 4px 10px 0px;
     font-weight: 200;
     line-height: 18px;
     opacity: 0.5;
-    padding: 4px 10px 0px;
     position: static;
     height: 30px;
     width: 15px;
@@ -110,7 +125,7 @@ li {
 /* testing */
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,700;);
-.snip1585 {
+.younglings {
     background-color: #000;
     color: #fff;
     display: inline-block;
@@ -125,15 +140,15 @@ li {
     width: 100%;
 }
 
-.snip1585 * {
+.younglings * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-transition: all 0.45s ease;
     transition: all 0.45s ease;
 }
 
-.snip1585:before,
-.snip1585:after {
+.younglings:before,
+.younglings:after {
     background-color: rgba(0, 0, 0, 0.5);
     border-top: 50px solid rgba(0, 0, 0, 0.5);
     border-bottom: 50px solid rgba(0, 0, 0, 0.5);
@@ -149,23 +164,24 @@ li {
     opacity: 0;
 }
 
-.snip1585:before {
+.younglings:before {
     -webkit-transform: scaleY(2);
     transform: scaleY(2);
 }
 
-.snip1585:after {
+.younglings:after {
     -webkit-transform: scaleY(2);
     transform: scaleY(2);
 }
 
-.snip1585 img {
+.younglings img {
     vertical-align: top;
     max-width: 100%;
     backface-visibility: hidden;
+    position: auto;
 }
 
-.snip1585 figcaption {
+.younglings figcaption {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -183,7 +199,7 @@ li {
     transition-delay: 0s;
 }
 
-.snip1585 h3 {
+.younglings h3 {
     font-size: 1em;
     font-weight: 400;
     letter-spacing: 1px;
@@ -191,12 +207,12 @@ li {
     text-transform: uppercase;
 }
 
-.snip1585 h3 span {
+.younglings h3 span {
     display: block;
     font-weight: 700;
 }
 
-.snip1585 a {
+.younglings a {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -205,22 +221,22 @@ li {
     z-index: 3;
 }
 
-.snip1585:hover>img,
-.snip1585.hover>img {
+.younglings:hover>img,
+.younglings.hover>img {
     opacity: 0.7;
 }
 
-.snip1585:hover:before,
-.snip1585.hover:before,
-.snip1585:hover:after,
-.snip1585.hover:after {
+.younglings:hover:before,
+.younglings.hover:before,
+.younglings:hover:after,
+.younglings.hover:after {
     -webkit-transform: scale(1);
     transform: scale(1);
     opacity: 1;
 }
 
-.snip1585:hover figcaption,
-.snip1585.hover figcaption {
+.younglings:hover figcaption,
+.younglings.hover figcaption {
     opacity: 1;
     -webkit-transition-delay: 0.1s;
     transition-delay: 0.1s;
