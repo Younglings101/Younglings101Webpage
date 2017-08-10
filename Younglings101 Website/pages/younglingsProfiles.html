@@ -1,5 +1,5 @@
 <head>
-    <!-- <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -7,240 +7,75 @@
     <link rel="stylesheet" href="../styles/carousel.css">
     <script src="../js/carouselAnimation.js"></script>-->
     <!--Control Box-->
-    <script>
-        $(document).ready(function() {
-            $('.carousel').carousel({
-                interval: 6000
-            })
-        });
-    </script>
+</head>
+
+<body id="app">
     <nav>
         <ul class="control-box pager">
             <li><a data-slide="prev" href="#myCarousel" class=""><i class="glyphicon glyphicon-chevron-left"></i></a></li>
             <li><a data-slide="next" href="#myCarousel" class=""><i class="glyphicon glyphicon-chevron-right"></i></a></li>
         </ul>
     </nav>
-
-</head>
-
-<body id="app">
     <div class="container">
         <div class="col-xs-12">
-
             <div class="page-header">
                 <h3>Current Younglings</h3>
-
             </div>
-
-            <div class="carousel slide" id="myCarousel">
+            <div class="carousel slide" id="myCarousel" ng-app="carousel" ng-controller="Controller">
                 <div class="carousel-inner">
                     <div class="item active">
                         <ul class="thumbnails">
-                            <li class="col-sm-2">
-                                <div class="fff">
-                                    <div class="thumbnail">
-                                        <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
-                                    </div>
-                                    <div class="caption">
-                                        <h4>Name</h4>
-
-                                        <a class="btn btn-mini" href="#">» Read More</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="col-sm-2">
-                                <div class="fff">
-                                    <div class="thumbnail">
-                                        <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
-                                    </div>
-                                    <div class="caption">
-                                        <h4>Name</h4>
-
-                                        <a class="btn btn-mini" href="#">» Read More</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="col-sm-2">
-                                <div class="fff">
-                                    <div class="thumbnail">
-                                        <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
-                                    </div>
-                                    <div class="caption">
-                                        <h4>Name</h4>
-
-                                        <a class="btn btn-mini" href="#">» Read More</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="col-sm-2">
-                                <div class="fff">
-                                    <div class="thumbnail">
-                                        <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
-                                    </div>
-                                    <div class="caption">
-                                        <h4>Name</h4>
-
-                                        <a class="btn btn-mini" href="#">» Read More</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="col-sm-2">
-                                <div class="fff">
-                                    <div class="thumbnail">
-                                        <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
-                                    </div>
-                                    <div class="caption">
-                                        <h4>Name</h4>
-
-                                        <a class="btn btn-mini" href="#">» Read More</a>
-                                    </div>
-                                </div>
-                            </li>
+                            <card ng-href="#!ernst"></card>
+                            <card ng-href="#!malcolm"></card>
+                            <card></card>
+                            <card></card>
+                            <card></card>
                         </ul>
                     </div>
                     <!-- /Slide1 -->
                     <div class="item">
                         <ul class="thumbnails">
-                            <li class="col-sm-2">
-                                <div class="fff">
-                                    <div class="thumbnail">
-                                        <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
-                                    </div>
-                                    <div class="caption">
-                                        <h4>Name</h4>
-
-                                        <a class="btn btn-mini" href="#">» Read More</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="col-sm-2">
-                                <div class="fff">
-                                    <div class="thumbnail">
-                                        <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
-                                    </div>
-                                    <div class="caption">
-                                        <h4>Name</h4>
-
-                                        <a class="btn btn-mini" href="#">» Read More</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="col-sm-2">
-                                <div class="fff">
-                                    <div class="thumbnail">
-                                        <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
-                                    </div>
-                                    <div class="caption">
-                                        <h4>Name</h4>
-
-                                        <a class="btn btn-mini" href="#">» Read More</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="col-sm-2">
-                                <div class="fff">
-                                    <div class="thumbnail">
-                                        <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
-                                    </div>
-                                    <div class="caption">
-                                        <h4>Name</h4>
-
-                                        <a class="btn btn-mini" href="#">» Read More</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="col-sm-2">
-                                <div class="fff">
-                                    <div class="thumbnail">
-                                        <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
-                                    </div>
-                                    <div class="caption">
-                                        <h4>Name</h4>
-
-                                        <a class="btn btn-mini" href="#">» Read More</a>
-                                    </div>
-                                </div>
-                            </li>
+                            <card></card>
+                            <card></card>
+                            <card></card>
+                            <card></card>
+                            <card></card>
                         </ul>
                     </div>
                     <!-- /Slide2 -->
                     <div class="item">
                         <ul class="thumbnails">
-                            <li class="col-sm-2">
-                                <div class="fff">
-                                    <div class="thumbnail">
-                                        <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
-                                    </div>
-                                    <div class="caption">
-                                        <h4>Name</h4>
-
-                                        <a class="btn btn-mini" href="#">» Read More</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="col-sm-2">
-                                <div class="fff">
-                                    <div class="thumbnail">
-                                        <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
-                                    </div>
-                                    <div class="caption">
-                                        <h4>Name</h4>
-
-                                        <a class="btn btn-mini" href="#">» Read More</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="col-sm-2">
-                                <div class="fff">
-                                    <div class="thumbnail">
-                                        <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
-                                    </div>
-                                    <div class="caption">
-                                        <h4>Name</h4>
-
-                                        <a class="btn btn-mini" href="#">» Read More</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="col-sm-2">
-                                <div class="fff">
-                                    <div class="thumbnail">
-                                        <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
-                                    </div>
-                                    <div class="caption">
-                                        <h4>Name</h4>
-
-                                        <a class="btn btn-mini" href="#">» Read More</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="col-sm-2">
-                                <div class="fff">
-                                    <div class="thumbnail">
-                                        <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
-                                    </div>
-                                    <div class="caption">
-                                        <h4>Name</h4>
-
-                                        <a class="btn btn-mini" href="#">» Read More</a>
-                                    </div>
-                                </div>
-                            </li>
+                            <card></card>
+                            <card></card>
+                            <card></card>
+                            <card></card>
+                            <card></card>
                         </ul>
                     </div>
                     <!-- /Slide3 -->
                 </div>
-
-
-
             </div>
             <!-- /#myCarousel -->
-
         </div>
         <!-- /.col-xs-12 -->
-
     </div>
     <!-- /.container -->
-
-
+    <script src="../lib/angular.min.js" type="text/javascript"></script>
+    <script src="../lib/angular-route.js" type="text/javascript"></script>
+    <script>
+        var app = angular.module("carousel", [])
+            .controller('Controller', [function () {
+                $(document).ready(function () {
+                    $('.carousel').carousel({
+                        interval: 5000
+                    });
+                });
+            }])
+            .directive('card', function () {
+                return {
+                    restrict: 'E',
+                    template: "<li class='col-sm-2'><div class='fff'><div class='thumbnail'><a href='#'><img src='http://placehold.it/360x240' alt=''></a></div><div class='caption'><h4>Name</h4><a class='btn btn-mini' href='#'>» Read More</a></div></div></li>"
+                };
+            });
+    </script>
 </body>
