@@ -20,63 +20,51 @@
 </head>
 
 <body>
-    <div>
+    <div class = "younglings101">
         <h1>#Younglings101</h1>
         <span class="fading-line"><span>
         <h2>Check out what the younglings have been up to!</h2>
             
             <div class = "row container-fluid">
                 <nav class = "nav nav-navbar">
-                    <span class = "col-sm-1 col-lg-1"></span>
                     <ul class="social-media-list">
-                        <div class="col-sm-2 col-lg-2">
-                            <li onclick="window.location.href = '#/'">Twitter</li>
+                        <div>
+                            <li onclick="window.location.href = '#/'; window.location.reload()">Twitter</li>
                         </div>
-                        <div class="col-sm-2 col-lg-2">
-                            <li onclick="window.location.href = '#!facebook'">Facebook</li>
+                        <div>
+                            <li onclick="window.location.href = '#!facebook'; window.location.reload()">Facebook</li>
                         </div>
-                        <div class="col-sm-2 col-lg-2">
-                            <li onclick="window.location.href = '#!instagram'">Instagram</li>
+                        <div>
+                            <li onclick="window.location.href = '#!instagram';window.location.reload()">Instagram</li>
                         </div>
-                        <div class="col-sm-2 col-lg-2">
+                        <div>
                             <li onclick="window.location.href = '#!youtube'; window.location.reload()">Youtube</li>
                         </div>
-                        <div class="col-sm-2 col-lg-2">
-                            <li onclick="window.location.href = '#!linkedin'">LinkedIn</li>
+                        <div>
+                            <li onclick="window.location.href = '#!linkedin' ; window.location.reload()">LinkedIn</li>
                         </div>
                     <ul>
-                <span class="col-sm-1 col-lg-1"></span>
                 </nav>
             </div>
 
-<!--hexagon-->
-  <div class="frame">
-    <div class="hex-outer hh1"></div>
-    <div class="hex-outer hh2"></div>
-    <div class="hex-outer hh3"></div>
-    <div class="hex-inner hh1"></div>
-    <div class="hex-inner hh2"></div>
-    <div class="hex-inner hh3"></div>
-    <div class="label">+</div>
-  </div>
+        <script src="../lib/angular.min.js" type="text/javascript"></script>
+        <script src="../lib/angular-route.js" type="text/javascript"></script>
+        <script src="../js/younglings101Routing.js" type="text/javascript"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="../js/youtubeloader.js"></script>
+        <script src="../js/instafeed.min.js"></script>
+        <script src="../js/instagramloader.js"></script>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+        <!--Display routed social media pages-->
+        <ng-view class = "social-midia-display">
+
+        </ng-view>
+
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
     </div>
-
-    <script src="../lib/angular.min.js" type="text/javascript"></script>
-    <script src="../lib/angular-route.js" type="text/javascript"></script>
-    <script src="../js/younglings101Routing.js" type="text/javascript"></script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="../js/youtubeloader.js"></script>
-    <script src="../js/instafeed.min.js"></script>
-    <script src="../js/instagramloader.js"></script>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-    <!--Display routed social media pages-->
-    <ng-view class = "social-midia-display col-sm-12 col-lg-12">
-
-    </ng-view>
-
 </body>
 
 </html>
