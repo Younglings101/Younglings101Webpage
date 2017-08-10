@@ -14,11 +14,16 @@ app.config(function ($routeProvider) {
 .directive('card', function() {
     return {
         restrict: 'E',
-        template: "<li class='col-xs-4'><figure class='younglings'><img src='http://via.placeholder.com/350x500' alt='a picture' class='img-responsive'/><figcaption><h3>Name <span>Surname</span></h3></figcaption></figure></li>"
+        template: "<li class='col-xs-4'><figure class='younglings'><img src='http://via.placeholder.com/350x500' alt='a picture' class='img-responsive'/><figcaption><h3>{{name}} <span>{{surname}}</span></h3></figcaption></figure></li>"
     };
 })
 .controller('randomiser', function(){
-    var links = [["#!ernst","../pages/younglingsProfilesSites/ernst/img/faceshot.jpg"], ["#!malcolm","../pages/younglingsProfilesSites/malcolm/IMG_20170624_130227.jpg"]];
-    return links[Math.random*links.length];
+    var links = [{"name":"Ernst", "surname":"Kaese", "link":"#!ernst","src":"../pages/younglingsProfilesSites/ernst/img/faceshot.jpg"}, {"name":"Malcolm", "surname":"TBD", "link":"#!malcolm","src":"../pages/younglingsProfilesSites/malcolm/IMG_20170624_130227.jpg"}];
+    /*
+    The carousel has 5 slides containing 3 cards each.
+    Each card needs to display random objects from links array.
+    Links array can also be a JSON file.
+    Use $scope to add data to the card directive.
+    */
 });
 
