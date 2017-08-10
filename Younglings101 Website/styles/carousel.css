@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
 img {
-    max-width: 100%;
+    width: 100%;
 }
 
 a {
@@ -16,35 +16,21 @@ a:hover {
 }
 
 body {
-    border-top: 0;
     background: #666464;
+    margin: 0px;
+    padding: 0px;
 }
 
 .thumbnails li>.fff .caption {
     background: #A0E418;
-    padding: 10px;
 }
-
-
-/*Web Page Box  */
-
-.webpage {
-    border: 1px solid white;
-    height: 500px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 50px;
-    overflow: scroll;
-}
-
 
 /*Page header*/
 
 .page-header {
     background: #A0E418;
-    margin: -30px -40px 40px;
+    margin: 0px;
     padding: 20px 40px;
-    border-top: 4px solid #6c6a6a;
     color: #999;
     text-transform: uppercase;
     text-align: center;
@@ -58,6 +44,8 @@ body {
 
 ul.thumbnails {
     margin-bottom: 0px;
+    height: 0px;
+    padding: 0px;
 }
 
 
@@ -71,25 +59,21 @@ ul.thumbnails {
 /*Carousel Control */
 
 .control-box {
-    text-align: left;
     width: 100%;
 }
 
 .carousel-control {
     background: #A0E418;
-    border: 0px;
-    border-radius: 0px;
     display: inline-block;
     font-size: 34px;
-    padding: 4px 10px 0px;
     font-weight: 200;
     line-height: 18px;
     opacity: 0.5;
-    position: static;
-    height: 30px;
-    width: 15px;
 }
 
+.col-xs-6{
+    margin: 1% 0px;
+}
 
 /*mobile*/
 
@@ -110,30 +94,16 @@ li {
     list-style-type: none;
 }
 
-::selection {
-    background: #ff5e99;
-    color: #FFFFFF;
-    text-shadow: 0;
-}
-
-::-moz-selection {
-    background: #ff5e99;
-    color: #FFFFFF;
-}
-
-
-/* testing */
-
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,700;);
 .younglings {
     background-color: #000;
     color: #fff;
     display: inline-block;
     font-family: 'Roboto', sans-serif;
-    font-size: 24px;
+    font-size: 2em;
     margin: 8px;
     max-width: 315px;
-    min-width: 230px;
+
     overflow: hidden;
     position: relative;
     text-align: center;
@@ -176,17 +146,17 @@ li {
 
 .younglings img {
     vertical-align: top;
-    max-width: 100%;
+    width: 100%;
     backface-visibility: hidden;
     position: auto;
 }
 
 .younglings figcaption {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
     align-items: center;
     z-index: 1;
     display: flex;
@@ -201,23 +171,23 @@ li {
 
 .younglings h3 {
     font-size: 1em;
-    font-weight: 400;
+    font-weight: 400px;
     letter-spacing: 1px;
-    margin: 0;
+    margin: 0px;
     text-transform: uppercase;
 }
 
 .younglings h3 span {
     display: block;
-    font-weight: 700;
+    font-weight: 700px;
 }
 
 .younglings a {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
     z-index: 3;
 }
 
@@ -240,4 +210,37 @@ li {
     opacity: 1;
     -webkit-transition-delay: 0.1s;
     transition-delay: 0.1s;
+}
+.carousel-inner{
+    padding: 0px;
+    margin: 0px;
+}
+.col-xs-4{
+    text-align: center;
+}
+.carousel{
+    padding: 0px;
+    margin-top: 1%;
+}
+.container-fluid{
+    padding: 0px;
+}
+
+card{
+    padding: 0px;
+    margin: 0px;
+    display: block;
+}
+
+@media screen and (max-width:767px) {
+    .page-header,
+    .control-box {
+        text-align: center;
+    }
+    .caption {
+        word-break: break-all;
+    }
+    .younglings{
+        font-size: 1em;
+    }
 }

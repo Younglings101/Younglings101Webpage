@@ -3,80 +3,64 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
     <link rel="stylesheet" href="../styles/carousel.css">
-    <script src="../js/carouselAnimation.js"></script>
-    <!--Control Box-->
 </head>
 
-<body id="app">
+<body id="app" ng-app="main" class="container-fluid">
     <div class="page-header">
         <h3>Current Younglings</h3>
     </div>
-    <div class="container">
+    <div class="container-fluid">
         <div class="col-xs-12">
-
-            <nav>
-                <ul class="control-box pager">
-                    <li><a data-slide="prev" href="#myCarousel" class="" style="float:left;"><i class="glyphicon glyphicon-chevron-left" ></i></a></li>
-                    <li><a data-slide="next" href="#myCarousel" class="" style="float:right;"><i class="glyphicon glyphicon-chevron-right"></i></a></li>
-                </ul>
-            </nav>
-            <div class="carousel slide" id="myCarousel" ng-app="carousel" ng-controller="Controller">
-                <div class="carousel-inner" style="background-color:#A0E418;">
-
+            <div class="carousel slide row" id="myCarousel">
+                <div class="carousel-inner container-fluid" style="background-color:#A0E418;">
                     <div class="item active">
                         <ul class="thumbnails">
-                            <card ng-href="#!ernst"></card>
-                            <card ng-href="#!malcolm"></card>
-                            <card></card>
-                            <card></card>
-                            <card></card>
+                            <card onclick="window.location.href='#!ernst'"></card>
+                            <card onclick="window.location.href='#!malcolm'"></card>
+                            <card onclick="window.location.href='#!malcolm'"></card>
                         </ul>
                     </div>
-                    <!-- /Slide1 -->
                     <div class="item">
                         <ul class="thumbnails">
                             <card></card>
                             <card></card>
                             <card></card>
-                            <card></card>
-                            <card></card>
                         </ul>
                     </div>
-                    <!-- /Slide2 -->
                     <div class="item">
                         <ul class="thumbnails">
                             <card></card>
                             <card></card>
                             <card></card>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <ul class="thumbnails">
+                            <card></card>
                             <card></card>
                             <card></card>
                         </ul>
                     </div>
-                    <!-- /Slide3 -->
+                    <div class="item">
+                        <ul class="thumbnails">
+                            <card></card>
+                            <card></card>
+                            <card></card>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <!-- /#myCarousel -->
         </div>
-        <!-- /.col-xs-12 -->
-
-
+        <nav>
+            <ul class="control-box pager">
+                <li class="col-xs-6"><a data-slide="prev" href="#myCarousel" style="float:left;"><i class="glyphicon glyphicon-chevron-left" ></i></a></li>
+                <li class="col-xs-6"><a data-slide="next" href="#myCarousel" style="float:right;"><i class="glyphicon glyphicon-chevron-right"></i></a></li>
+            </ul>
+        </nav>
     </div>
-    <!-- /.container -->
-    <div class="webpage" style=" ">
-
-    </div>
+    <ng-view class="container-fluid"></ng-view>
     <script src="../lib/angular.min.js" type="text/javascript"></script>
     <script src="../lib/angular-route.js" type="text/javascript"></script>
-    <script>
-        var app = angular.module("carousel", [])
-
-        .directive('card', function() {
-            return {
-                restrict: 'E',
-                template: "<li class='col-xs-2'><figure class='younglings'><img src='http://via.placeholder.com/350x500' alt='sample106' /><figcaption><h3>Name <span>Surname</span></h3></figcaption></figure></li>"
-            };
-        });
-    </script>
+    <script src="../js/currentYounglingRouting.js" type="text/javascript"></script>
 </body>
