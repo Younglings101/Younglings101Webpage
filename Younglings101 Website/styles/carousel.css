@@ -1,48 +1,46 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
-img {
+#headshot {
     width: 100%;
 }
 
-a {
+#pager {
     -webkit-transition: all 150ms ease;
     -moz-transition: all 150ms ease;
     transition: all 150ms ease;
 }
 
-a:hover {
+#pager:hover {
     filter: alpha(opacity=50);
     opacity: 0.6;
     text-decoration: none;
 }
 
-body {
+#app {
     background: #666464;
     margin: 0px;
     padding: 0px;
 }
 
-.thumbnails li>.fff .caption {
+.thumbnails li>.fff .CYcaption {
     background: #A0E418;
 }
 
 
-
-
 /*Thumbnail Box*/
 
-.caption h4 {
+.CYcaption h4 {
     color: #444
 }
 
 
 /*Carousel Control */
 
-.control-box {
+.CYcontrol-box {
     width: 100%;
 }
 
 .carousel-control {
-    background: #A0E418;
+    background: lightgray;
     display: inline-block;
     font-size: 34px;
     font-weight: 200;
@@ -50,21 +48,22 @@ body {
     opacity: 0.5;
 }
 
-.col-xs-6{
+.col-xs-6 {
     margin: 1% 0px;
 }
+
 
 /*mobile*/
 
 @media(max-width:767px) {
-    .page-header,
-    .control-box {
+    .CYpage-header,
+    .CYcontrol-box {
         text-align: center;
     }
 }
 
 @media(max-width:767px) {
-    .caption {
+    .CYcaption {
         word-break: break-all;
     }
 }
@@ -82,7 +81,6 @@ li {
     font-size: 2em;
     margin: 8px;
     max-width: 315px;
-
     overflow: hidden;
     position: relative;
     text-align: center;
@@ -123,7 +121,7 @@ li {
     transform: scaleY(2);
 }
 
-.younglings img {
+.younglings #headshot {
     vertical-align: top;
     width: 100%;
     backface-visibility: hidden;
@@ -170,8 +168,8 @@ li {
     z-index: 3;
 }
 
-.younglings:hover>img,
-.younglings.hover>img {
+.younglings:hover>#headshot,
+.younglings.hover>#headshot {
     opacity: 0.7;
 }
 
@@ -190,30 +188,37 @@ li {
     -webkit-transition-delay: 0.1s;
     transition-delay: 0.1s;
 }
-.carousel-inner{
+
+.carousel-inner {
     padding: 0px;
     margin: 0px;
 }
-.col-xs-4{
+
+.col-xs-4 {
     text-align: center;
 }
-.carousel{
+
+.carousel {
     padding: 0px;
     margin-top: 1%;
+    margin-left: 10px;
+    margin-right: 10px;
 }
-.container-fluid{
+
+.CYcontainer-fluid {
     padding: 0px;
 }
 
-card{
+card {
     padding: 0px;
     margin: 0px;
     display: block;
 }
 
+
 /*Page header*/
 
-.page-header {
+.CYpage-header {
     background: #A0E418;
     margin: 0px;
     padding: 20px 40px;
@@ -225,9 +230,11 @@ card{
     vertical-align: middle;
     border: none;
     box-shadow: 1px 1px 5px #888888;
+    margin-left: 25%;
+    margin-right: 25%
 }
 
-.page-header h3 {
+.CYpage-header h3 {
     color: #000;
 }
 
@@ -238,15 +245,15 @@ ul.thumbnails {
 }
 
 @media screen and (max-width:767px) {
-    .page-header,
-    .control-box {
+    .CYpage-header,
+    .CYcontrol-box {
         text-align: center;
-        font-size:  2em;
+        font-size: 2em;
     }
-    .caption {
+    .CYcaption {
         word-break: break-all;
     }
-    .younglings{
+    .younglings {
         font-size: 1em;
     }
 }

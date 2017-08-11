@@ -6,20 +6,20 @@
     <link rel="stylesheet" href="../styles/carousel.css"></link>
 </head>
 
-<body id="app" ng-app="main" class="container-fluid" ng-controller="randomiser">
-    <div class="page-header">
+<body id="app" ng-app="main" class="CYcontainer-fluid" ng-controller="randomiser">
+    <div class="CYpage-header">
         <h3>Current Younglings</h3>
     </div>
-    <div class="container-fluid">
+    <div class="CYcontainer-fluid">
         <carousel></carousel>
         <nav>
-            <ul class="control-box pager">
-                <li class="col-xs-6"><a data-slide="prev" href="#myCarousel" style="float:left;"><i class="glyphicon glyphicon-chevron-left" ></i></a></li>
-                <li class="col-xs-6"><a data-slide="next" href="#myCarousel" style="float:right;"><i class="glyphicon glyphicon-chevron-right"></i></a></li>
+            <ul class="CYcontrol-box pager">
+                <li class="col-xs-6"><a id="pager" data-slide="prev" href="#myCarousel" style="float:left;"><i class="glyphicon glyphicon-chevron-left" ></i></a></li>
+                <li class="col-xs-6"><a id="pager" data-slide="next" href="#myCarousel" style="float:right;"><i class="glyphicon glyphicon-chevron-right"></i></a></li>
             </ul>
         </nav>
     </div>
-    <ng-view class="container-fluid"></ng-view>
+    <ng-view class="CYcontainer-fluid"></ng-view>
     <script src="../lib/angular.min.js" type="text/javascript"></script>
     <script src="../lib/angular-route.js" type="text/javascript"></script>
     <script src="../js/currentYounglingRouting.js" type="text/javascript"></script>
