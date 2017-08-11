@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+@import url('https://use.fontawesome.com/f5a0c55ae1.js');
+
 
     *{
         font-family: 'Open Sans Condensed' , sans-serif;
     }
+
+
 
 body{
     background-color: #525050;
@@ -64,6 +68,7 @@ body{
 
     .social-media-display{
         height:auto;
+        margin: 0px;
     }
 
     #link-facebook{
@@ -135,15 +140,15 @@ body{
     }
 
     .youtube-panel{
-        margin: 20px 60px 0px 60px;
-        height: 100%;
+        margin: 1px 1px 1px 1px;
+        height: auto;
         border: 1px solid #A0E418;
         background-color: #6c6a6a;
     }
 
     .twitter-panel {
-        margin: 20px 90px 0px 80px;
-        height: 100%;
+        margin: 1px 1px 1px 1px;
+        height: auto;
         border: 1px solid #A0E418;
         background-color: #6c6a6a;
     }
@@ -154,17 +159,18 @@ body{
     }
 
     .facebook-panel{
-        margin: 20px 60px 0px 60px;
-        height: 100%;
+        margin: 1px 1px 1px 1px;
+        height: auto;
         border: 1px solid #A0E418;
         background-color: #6c6a6a;
         }
 
     .instagram-panel{
-        margin: 20px 600px 0px 60px;
-        height: 100%;
+        margin: 1px 1px 1px 1px;
+        height: auto;
         border: 1px solid #A0E418;
         background-color: #6c6a6a;
+        text-align: center;
     }
 
     .tabcontent {
@@ -184,3 +190,61 @@ body{
     .facebook{
         width: 500px;
     }
+
+    .facebook-container{
+        padding: 10px;
+        width: 49%;
+        height: 100%;
+        margin-left:28%
+    }
+
+    .youtube-container{
+        padding: 10px;
+        width: 49%;
+        height: 100%;
+        margin-left:22%
+    }
+
+.instagram-container{
+        padding: 10px;
+        width: 49%;
+        height: 100%;
+        margin-left:22%
+    }
+
+    @media screen and (max-width:800px){
+
+    .younglings101{
+        margin: 5% 5%;
+    }
+
+    .nav-tab span{
+        display: none;
+    }
+
+    #twitter-tab:after{
+        font-family: FontAwesome;
+        content: "\f099";
+    }
+
+    #facebook-tab:after{
+        font-family: FontAwesome;
+        content: "\f09a";
+    }
+
+    #instagram-tab:after{
+        font-family: FontAwesome;
+        content: "\f16d";
+    }
+
+    #youtube-tab:after{
+        font-family: FontAwesome;
+        content: "\f167";
+    }
+
+    #linkedin-tab:after{
+        font-family: FontAwesome;
+        content: "\f0e1";
+    }
+
+}
