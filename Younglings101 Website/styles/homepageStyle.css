@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+html {
+ margin:0;
+ padding:0;
+
+ 
+}
+body {
+ margin:0;
+ height:100%;
+ background-color: #525050;
+ font-family: 'Open Sans Condensed', sans-serif;
+ 
+}
+
+.homepageInfoPanel{
+    background-color: #A0E418;
+    width:35%;
+    float:left;
+    margin-left: 10%;
+    height:auto;
+}
+
+@media screen and (max-width: 480px) {
+    .homepageInfoPanel {
+        width:90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .alienLogoContainer{
+        margin-left: 20%;
+        margin-right: 25%;
+    }
+}
+
+
+@media screen and (max-width: 667px) {
+    .alienLogoContainer{
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+     .homepageInfoPanel {
+        width:90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .alienLogoContainer{
+        margin-left: 25%;
+        margin-right: 45%;
+    }
+     .homepageInfoPanel {
+        width:90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+
+#companyText{
+    text-align: center;
+    margin-top: 20%;
+    font-size: 2.8em;
+    color:#525050;
+    
+}
+
+#groupName{
+    text-align: center;
+    font-size: 2.8em;
+    color:#525050;
+}
+
+.alienLogo{
+    -webkit-transition: -webkit-transform 1.5s ease;
+    height:140px;
+    width:120px;
+
+}
+
+.alienLogo:hover{
+    
+
+    -ms-transform: rotate(360deg); /* IE 9 */
+    -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+    transform: rotate(360deg);
+
+    -webkit-transition: -webkit-transform 1.5s ease-in;
+
+}
+.alienLogoContainer{
+    margin-left: 36%;
+    margin-right: 36%;
+}
+
+
+
+
+
+
+.homepageInfoText{
+    font-size: 1.3em;
+    margin:5%;
+}
+
+
