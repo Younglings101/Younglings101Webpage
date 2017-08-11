@@ -25,5 +25,17 @@ app.config(function ($routeProvider) {
     Links array can also be a JSON file.
     Use $scope to add data to the card directive.
     */
+    var random = [];
+    var nums = [];
+    while(random.length<links.length){
+        var ran = Math.floor(Math.random*links.length+1);
+        console.log(ran);
+        var flag = false;
+        for(var i=0; i<nums.length; i++){
+            if(nums[i]==ran){
+                
+            }
+        }
+    }
 });
 
