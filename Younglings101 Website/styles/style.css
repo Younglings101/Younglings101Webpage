@@ -1,0 +1,41 @@
+.nav {
+        background-color: #7FB414;
+        position: fixed;
+        width: 100%;
+    }
+
+    .social-media-list {
+        list-style: none;
+        display: flex;
+        float: right;
+        align-items: center;
+    }
+
+    .social-media-list a {
+        color: #FFF;
+        font-size: 24px;
+        text-align: center;
+        padding: 7px 3px 7px 3px;
+        font-size: 50px;
+        text-decoration: none;
+        padding: 5px 10px 5px 10px;
+    }
+
+    .social-media-list a:hover{
+        color: #6c6a6a;
+    } 
+
+    .footer{
+        background-color: #7FB414;
+        position: fixed;
+        width: 100%;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    .rights h1{
+        color: #FFF;
+        font-size: 20px;
+    }
