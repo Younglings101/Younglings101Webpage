@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+@import url('https://use.fontawesome.com/f5a0c55ae1.js');
+
 
     *{
         font-family: 'Open Sans Condensed' , sans-serif;
@@ -214,6 +216,35 @@ body{
 
     .younglings101{
         margin: 5% 5%;
+    }
+
+    .nav-tab span{
+        display: none;
+    }
+
+    #twitter-tab:after{
+        font-family: FontAwesome;
+        content: "\f099";
+    }
+
+    #facebook-tab:after{
+        font-family: FontAwesome;
+        content: "\f09a";
+    }
+
+    #instagram-tab:after{
+        font-family: FontAwesome;
+        content: "\f16d";
+    }
+
+    #youtube-tab:after{
+        font-family: FontAwesome;
+        content: "\f167";
+    }
+
+    #linkedin-tab:after{
+        font-family: FontAwesome;
+        content: "\f0e1";
     }
 
 }
