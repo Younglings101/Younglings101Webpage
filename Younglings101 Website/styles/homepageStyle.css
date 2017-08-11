@@ -8,7 +8,6 @@ html {
 }
 body {
  margin:0;
- font-family:"Inconsolata";
  height:100%;
  background-color: #525050;
  font-family: 'Open Sans Condensed', sans-serif;
@@ -20,8 +19,48 @@ body {
     width:35%;
     float:left;
     margin-left: 10%;
-    height:100%;
+    height:auto;
 }
+
+@media screen and (max-width: 480px) {
+    .homepageInfoPanel {
+        width:90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .alienLogoContainer{
+        margin-left: 20%;
+        margin-right: 25%;
+    }
+}
+
+
+@media screen and (max-width: 667px) {
+    .alienLogoContainer{
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+     .homepageInfoPanel {
+        width:90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .alienLogoContainer{
+        margin-left: 25%;
+        margin-right: 45%;
+    }
+     .homepageInfoPanel {
+        width:90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
 
 #companyText{
     text-align: center;
@@ -38,17 +77,31 @@ body {
 }
 
 .alienLogo{
+    -webkit-transition: -webkit-transform 1.5s ease;
     height:140px;
-    width:140px;
-    position:relative;
-    
-    border-radius:50%
+    width:120px;
+
 }
 
+.alienLogo:hover{
+    
+
+    -ms-transform: rotate(360deg); /* IE 9 */
+    -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+    transform: rotate(360deg);
+
+    -webkit-transition: -webkit-transform 1.5s ease-in;
+
+}
 .alienLogoContainer{
     margin-left: 36%;
-    margin-right: 66%;
+    margin-right: 36%;
 }
+
+
+
+
+
 
 .homepageInfoText{
     font-size: 1.3em;
@@ -56,46 +109,3 @@ body {
 }
 
 
-.hex-grid{
-    float: right; 
-    width: 400px;
-    margin-right: 10%;
-    margin-top: 15%;
-}
-
-.hex {
-    float: left;
-    margin-left: 3px;
-    margin-bottom: -37px;
-}
-.hex .top {
-    width: 0;
-    border-bottom: 40px solid #A0E418;
-    border-left: 62px solid transparent;
-    border-right: 62px solid transparent;
-}
-.middle {
-    width: 124px;
-    height: 80px;
-    background: #A0E418;
-}
-.hex .bottom {
-    width: 0;
-    border-top: 40px solid #A0E418;
-    border-left: 62px solid transparent;
-    border-right: 62px solid transparent;
-}
-.hex-row {
-    clear: left;
-}
-.hex-row.even {
-    margin-left: 63px;
-}
-
-
-.hexText{
-    text-align: center;
-    padding-top:10%;
-    font-size: 1.4em;
-    color:#525050;
-}
