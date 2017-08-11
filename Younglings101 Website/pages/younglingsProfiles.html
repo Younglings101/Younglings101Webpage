@@ -1,58 +1,17 @@
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../styles/carousel.css">
+    <link rel="stylesheet" href="../styles/carousel.css"></link>
 </head>
 
-<body id="app" ng-app="main" class="container-fluid">
+<body id="app" ng-app="main" class="container-fluid" ng-controller="randomiser">
     <div class="page-header">
         <h3>Current Younglings</h3>
     </div>
     <div class="container-fluid">
-        <div class="col-xs-12">
-            <div class="carousel slide row" data-interval="false" id="myCarousel">
-                <div class="carousel-inner container-fluid" style="background-color:#A0E418;">
-                    <carousel></carousel>
-                    <!-- <div class="item active">
-                        <ul class="thumbnails">
-                            <card onclick="window.location.href='#!ernst'"></card>
-                            <card onclick="window.location.href='#!malcolm'"></card>
-                            <card onclick="window.location.href='#!malcolm'"></card>
-                        </ul>
-                    </div>
-                    <div class="item">
-                        <ul class="thumbnails">
-                            <card></card>
-                            <card></card>
-                            <card></card>
-                        </ul>
-                    </div>
-                    <div class="item">
-                        <ul class="thumbnails">
-                            <card></card>
-                            <card></card>
-                            <card></card>
-                        </ul>
-                    </div>
-                    <div class="item">
-                        <ul class="thumbnails">
-                            <card></card>
-                            <card></card>
-                            <card></card>
-                        </ul>
-                    </div>
-                    <div class="item">
-                        <ul class="thumbnails">
-                            <card></card>
-                            <card></card>
-                            <card></card>
-                        </ul>
-                    </div> -->
-                </div>
-            </div>
-        </div>
+        <carousel></carousel>
         <nav>
             <ul class="control-box pager">
                 <li class="col-xs-6"><a data-slide="prev" href="#myCarousel" style="float:left;"><i class="glyphicon glyphicon-chevron-left" ></i></a></li>
