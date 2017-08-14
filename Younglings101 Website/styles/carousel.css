@@ -21,21 +21,21 @@
     padding: 0px;
 }
 
-.thumbnails li>.fff .CYcaption {
+.thumbnails li>.fff .caption {
     background: #A0E418;
 }
 
 
 /*Thumbnail Box*/
 
-.CYcaption h4 {
+.caption h4 {
     color: #444
 }
 
 
 /*Carousel Control */
 
-.CYcontrol-box {
+.control-box {
     width: 100%;
 }
 
@@ -56,14 +56,14 @@
 /*mobile*/
 
 @media(max-width:767px) {
-    .CYpage-header,
-    .CYcontrol-box {
+    .page-header,
+    .control-box {
         text-align: center;
     }
 }
 
 @media(max-width:767px) {
-    .CYcaption {
+    .caption {
         word-break: break-all;
     }
 }
@@ -205,7 +205,7 @@ li {
     margin-right: 10px;
 }
 
-.CYcontainer-fluid {
+.container-fluid {
     padding: 0px;
 }
 
@@ -218,7 +218,7 @@ card {
 
 /*Page header*/
 
-.CYpage-header {
+.page-header {
     background: #A0E418;
     margin: 0px;
     padding: 20px 40px;
@@ -234,23 +234,23 @@ card {
     margin-right: 25%
 }
 
-.CYpage-header h3 {
+.page-header h3 {
     color: #000;
 }
 
 ul.thumbnails {
     margin-bottom: 0px;
-    height: 0px;
+    height: auto;
     padding: 0px;
 }
 
 @media screen and (max-width:767px) {
-    .CYpage-header,
-    .CYcontrol-box {
+    .page-header,
+    .control-box {
         text-align: center;
         font-size: 2em;
     }
-    .CYcaption {
+    .caption {
         word-break: break-all;
     }
     .younglings {
