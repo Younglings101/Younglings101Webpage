@@ -1,27 +1,31 @@
 .become-a-youngling {
-    background-color: #525050;
     text-align: center;
     color: white;
+    background-image: url("../Images/ep_naturalblack.png");
 }
 
 #BAYnav-become-icons {
     padding-top: 2%;
     letter-spacing: 20px;
-    background-color: #6c6a6a;
 }
 
 #become-youngling-text {
-    background-color: #6c6a6a;
+    background-color: rgba(255, 252, 252, 0.1);
 }
 
 #BAYcollapse-icon {
     text-decoration: none;
-    color: #A0E418;
+    color: #be3144;
 }
 
-#BAYcollapse-icon:hover {
+
+/*#BAYcollapse-icon:hover {
     text-decoration: none;
-    color: #7FB414;
+    color: #ff4d4d;
+}*/
+
+#BAYstart_coding {
+    color: white;
 }
 
 .img-logo {
@@ -143,7 +147,7 @@
     -webkit-transform: skewY(-30deg) rotate3d(0, 0, 1, 60deg);
     -ms-transform: skewY(-30deg) rotate3d(0, 0, 1, 60deg);
     transform: skewY(-30deg) rotate3d(0, 0, 1, 60deg);
-    background-color: #A0E418;
+    background-color: #be3144;
 }
 
 
