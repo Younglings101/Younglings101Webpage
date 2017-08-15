@@ -1,6 +1,7 @@
 *{
     font-family: 'Inconsolata', monospace;
     height: auto;
+    overflow: hidden;
 }
 
 .navbar-nav{

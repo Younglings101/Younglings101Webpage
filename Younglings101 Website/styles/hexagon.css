@@ -3,13 +3,14 @@
     padding: 0;
 }
 body {
-    background: rgb(123, 158, 158);
+    background: url("../img/Background_Subtle.png");
 }
 #hexGrid {
   display: flex;
   flex-wrap: wrap;
   width: 90%;
   margin: 0 auto;
+  margin-top: 20px;
   overflow: hidden;
   font-family: 'Raleway', sans-serif;
   font-size: 15px;
@@ -71,8 +72,9 @@ body {
   width: 100%;
   padding: 5%;
   box-sizing:border-box;
-  background-color: rgba(0, 128, 128, 0.8);
+  background-color: rgba(190, 49, 68, 0.9);
   font-weight: 300;
+  color: lightgray;
   -webkit-transition:  -webkit-transform .2s ease-out, opacity .3s ease-out;
           transition:          transform .2s ease-out, opacity .3s ease-out;
 }
@@ -80,6 +82,7 @@ body {
   bottom: 50%;
   padding-top:50%;
   font-size: 1.5em;
+  padding-bottom: 2%;
   z-index: 1;
   -webkit-transform:translate3d(0,-100%,0);
       -ms-transform:translate3d(0,-100%,0);
@@ -97,6 +100,7 @@ body {
 .hex p {
   top: 50%;
   padding-bottom:50%;
+  font-size: 1.5em;
   -webkit-transform:translate3d(0,100%,0);
       -ms-transform:translate3d(0,100%,0);
           transform:translate3d(0,100%,0);
@@ -171,5 +175,22 @@ body {
     overflow: hidden;
     height: auto;
     width: 100%;
-    margin: 2% 0px;
+    margin: 0px;
+    margin-top: 2%;
+}
+
+h1, .page-header{
+  border: none;
+  background-color: #be3144;
+  margin: 0px;
+  padding: 1%;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  text-align: center;
+  color: lightgray;
+}
+
+.container-fluid{
+  padding: 0px;
 }
