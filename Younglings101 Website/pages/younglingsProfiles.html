@@ -1,22 +1,22 @@
-<head>
+<div>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../styles/currentYounglingStyles.css"></link>
-</head>
+</div>
 
-<body id="app" ng-app="main" class="container-fluid" ng-controller="randomiser">
+<div id="app" ng-app="main" class="container-fluid" ng-controller="randomiser">
     <div class="page-header" id="top">
         <h1>Current Younglings</h1>
     </div>
     <ul id="hexGrid">
         <li class="hex" ng-repeat="person in links">
             <div class="hexIn">
-                <a class="{{person.hexLink}}" href="#frame" ng-click="setCurrentUrl(person.link)">
+                <a class="hexLink" href="#frame" ng-click="setCurrentUrl(person.link)">
                   <img src="{{person.src}}" alt="" class="img-responsive"/>
-                  <h1>{{person.name}}</h1>
-                  <p>{{person.surname}}</p>
+                  <h1 class="{{person.display}}">{{person.name}}</h1>
+                  <p class="{{person.display}}">{{person.surname}}</p>
                 </a>
             </div>
         </li>
@@ -57,4 +57,4 @@
             });
         });
     </script>
-</body>
+</div>
