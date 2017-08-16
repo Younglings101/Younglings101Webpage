@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-body {
+#app {
     background: url("../img/Background_Subtle.png");
 }
 #hexGrid {
