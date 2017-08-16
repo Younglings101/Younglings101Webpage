@@ -1,6 +1,6 @@
 var app = angular.module("main", [])
     .controller('randomiser', ['$scope', '$sce', function ($scope, $sce) {
-        $scope.links = [{ "name": "Ernst", "surname": "Kaese", "link": "../pages/younglingsProfilesSites/ernst/index.html", "src": "../pages/younglingsProfilesSites/ernst/img/faceshot.jpg"}, { "name": "Malcolm", "surname": "Carelse", "link": "../pages/younglingsProfilesSites/malcolm/malcolmyoungling.html", "src": "../pages/younglingsProfilesSites/malcolm/IMG_20170624_130227.jpg"}, { "name": "", "surname": "", "link": "", "src": "http://via.placeholder.com/350x350"}, { "name": "", "surname": "", "link": "", "src": "http://via.placeholder.com/350x350" }, { "name": "", "surname": "", "link": "", "src": "http://via.placeholder.com/350x350" }, { "name": "", "surname": "", "link": "", "src": "http://via.placeholder.com/350x350" }, { "name": "", "surname": "", "link": "", "src": "http://via.placeholder.com/350x350" }, { "name": "", "surname": "", "link": "", "src": "http://via.placeholder.com/350x350" }, { "name": "", "surname": "", "link": "", "src": "http://via.placeholder.com/350x350" }, { "name": "", "surname": "", "link": "", "src": "http://via.placeholder.com/350x350" }, { "name": "", "surname": "", "link": "", "src": "http://via.placeholder.com/350x350" }, { "name": "", "surname": "", "link": "", "src": "http://via.placeholder.com/350x350" }, { "name": "", "surname": "", "link": "", "src": "http://via.placeholder.com/350x350" }, { "name": "", "surname": "", "link": "", "src": "http://via.placeholder.com/350x350" }];
+        $scope.links = [{ "name": "Ernst", "surname": "Kaese", "link": "../pages/younglingsProfilesSites/ernst/index.html", "src": "../pages/younglingsProfilesSites/ernst/img/faceshot.jpg"}, { "name": "Malcolm", "surname": "Carelse", "link": "../pages/younglingsProfilesSites/malcolm/malcolmyoungling.html", "src": "../pages/younglingsProfilesSites/malcolm/IMG_20170624_130227.jpg"}, { "name": "", "surname": "", "link": "", "src": "http://via.placeholder.com/400x400"}, { "name": "", "surname": "", "link": "", "src": "http://via.placeholder.com/400x400" }, { "name": "", "surname": "", "link": "", "src": "http://via.placeholder.com/400x400" }, { "name": "", "surname": "", "link": "", "src": "http://via.placeholder.com/400x400" }, { "name": "", "surname": "", "link": "", "src": "http://via.placeholder.com/400x400" }, { "name": "", "surname": "", "link": "", "src": "http://via.placeholder.com/400x400" }, { "name": "", "surname": "", "link": "", "src": "http://via.placeholder.com/400x400" }, { "name": "", "surname": "", "link": "", "src": "http://via.placeholder.com/400x400" }, { "name": "", "surname": "", "link": "", "src": "http://via.placeholder.com/400x400" }, { "name": "", "surname": "", "link": "", "src": "http://via.placeholder.com/400x400" }, { "name": "", "surname": "", "link": "", "src": "http://via.placeholder.com/400x400" }, { "name": "", "surname": "", "link": "", "src": "http://via.placeholder.com/400x400" }];
         links = shuffle($scope.links);
 
         $scope.currentUrl = "";
@@ -18,7 +18,7 @@ var app = angular.module("main", [])
                 frame.style.height = '0%';
             }
             else {
-                frame.style.height = '80%';
+                frame.style.height = window.innerHeight;
             }
         }
     }]);
